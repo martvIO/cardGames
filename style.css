@@ -1,0 +1,107 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: auto;
+}
+
+h1, h4 {
+    margin: 10px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    margin: auto;
+}
+
+.grid-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.Card button {
+    border: none;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+}
+
+.Card img {
+    width: 200px;
+    height: 200px;
+}
+
+#Score {
+    color: lime;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#Reset {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+.Card {
+    background-image: url("funny-cat-9.jpg");
+    background-size:cover;
+}
+.Card img {
+    display: none;
+}
+
+.Flip img {
+    display: block;
+    
+}
+.Flip {
+    background: url("cool-profile-pictures-hoodie-cat-6dkl56hixhnq590g.jpg");
+    background-size: cover;
+}
+
+.Done img {
+    display: block;
+}
+
+.Done {
+    background-color: black;
+}
+
+#confetti{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
